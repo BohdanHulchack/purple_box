@@ -341,7 +341,7 @@ li.search{
 	width: 15px;
 	text-indent: -9999px;
 	border:0 none;
-	margin: 10px 0 0 0 ;
+	margin-top: 13px;
 	padding:0;
 	cursor: pointer;
 }
@@ -458,13 +458,66 @@ li.search{
 	border-bottom: 1px solid #C0C0C0;
 }
 
-.main_img_small{}
-.sidebar{
-	width: 300px;
-}
+
+
 
 	/* 0.0 Right bar*/
+	.sidebar{
+		width: 300px;
+	}
+	.conteiner_black{
+		background-color: #000000;
+		width: 100%;
+		position: relative;
+	}
+	.conteiner_black:after {
+	    border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+	    border-top: 5px solid #000000;
+	    bottom: -5px;
+	    content: "";
+	    display: block;
+	    height: 0;
+	    left: 50%;
+	    margin-left: -5px;
+	    position: absolute;
+	    width: 0;
+	}
 	/* 0.0 Share*/
+	.circle{
+		display: block;
+		width: 60px;
+		height: 80px;
+		overflow: hidden;
+		margin:20px 5px 30px;
+		position: relative;
+
+	}
+
+	a.circle p{
+		color: #808080;
+		margin-top: 55px;
+		text-decoration: none;
+		text-align: center;
+		font-size: 11px;
+	}
+	a.circle{text-decoration: none;}
+
+	.social_circles>li{
+		display: inline-block;
+	}
+	.circle_fb{
+		background: #ffffff url("../images/sprite_icons.png") no-repeat -50px 0px;
+	}
+	.circle_in{
+		background: #ffffff url("../images/sprite_icons.png") no-repeat -111px 0px;
+	}
+	.circle_vk{
+		background: #ffffff url("../images/sprite_icons.png") no-repeat -172px 0px;
+	}
+	.circle_tw{
+		background: #ffffff url("../images/sprite_icons.png") no-repeat -233px 0px;
+	}
 	/* 0.0 Instagram*/
 	.sidebar_black_block{
 		border: 1px solid #C0C0C0;
@@ -494,10 +547,14 @@ li.search{
 		display: block;
 		margin: 0 auto;
 	}
+	.pop_posts{
+		margin:20px 0;
+	}
 	.pop_posts p{
 		text-align: center;
 		font-size: 25px;
 		font-family: 'Droid Serif', serif;
+		margin-bottom: 10px;
 	}
 	/* 0.0 Footer menu*/
 	.conteiner_grey{
@@ -582,19 +639,33 @@ li.search{
 	}
 	/* 0.0 Footer socia*/
 	.footer_social_stats{
+
 		padding: 20px 15px;
+
 	}
-	.footer_social_stats li{
-		
+	.circle_small{
+		width: 200px;
+		height: 30px;
+		overflow: hidden;
+		position: relative;
 	}
-	.footer_social_stats{
-		
+
+	li.circle_small p{
+		color: #808080;
+		margin-left: 40px;
+		text-decoration: none;
+		text-align: left;
+		font-size: 12px;
 	}
+	li.circle_small a{text-decoration: none;}
+
+	.small_circle_fb{background: #C0C0C0 url("../images/sprite_icons.png") no-repeat 0px -100px;}
+	.small_circle_in{background: #C0C0C0 url("../images/sprite_icons.png") no-repeat 0px -131px;}
+	.small_circle_vk{background: #C0C0C0 url("../images/sprite_icons.png") no-repeat 0px -162px;}
+	.small_circle_tw{background: #C0C0C0 url("../images/sprite_icons.png") no-repeat 0px -193px;}
+
 	/* 0.0 Footer copyright*/
-	.conteiner_black{
-		background-color: #000000;
-		width: 100%;
-	}
+
 	.copyright{
 		padding: 15px 10px 15px 10px;
 	}
@@ -604,5 +675,11 @@ li.search{
 		color: #ffffff;
 		text-decoration: none;
 	}
+	.footer_conteiner{
+		background-color: #000000;
+		width: 100%;
+	}
 
-
+    .copyright a:nth-child(2){
+    	float: right;
+    }
