@@ -211,6 +211,7 @@ ul, li{
 	top: 0px;
 	left: 0px;
 	border-bottom: 2px solid #808080;
+	z-index: 99;
 }
 .menu_bar a{
 	display: block;
@@ -316,24 +317,20 @@ ul, li{
 .menu_vk a:hover{background: #000000 url("../images/vk_g.png")  no-repeat 4% 50%;}
 .menu_tw a{background: #000000 url("../images/tw_w.png")  no-repeat 4% 50%;}
 .menu_tw a:hover{background: #000000 url("../images/tw_g.png")  no-repeat 4% 50%;}
-	
-
 
 /*search*/
 
 li.search{
 	margin-right: 0px;
 	float: right;
-	}
-#search{
-	display:block;
-	}
+}
+
 .search input{
 	padding-top: 10px;
 	background-color: #000000;
 	border:0px;
 }
-.search input[value],.search input[placeholder] {
+.search input[value],.search input[placeholder]{
 	color: #C0C0C0;
 	text-transform: uppercase;
 	font-family: 'Volkhov', serif; 
@@ -346,8 +343,11 @@ li.search{
 	border:0 none;
 	margin: 10px 0 0 0 ;
 	padding:0;
-	cursor: pointer;}
-.search_btn:hover{background: #000000 url("../images/sprite_icons.png")  no-repeat 1px 0px;}
+	cursor: pointer;
+}
+.search_btn:hover{
+	background: #000000 url("../images/sprite_icons.png")  no-repeat 1px 0px;
+}
 
 /*0.0 logo*/
 
@@ -394,11 +394,12 @@ li.search{
 
 .post_content{
 	margin:0 10%;
+	padding: 10px 0;
 	text-align: justify;
 }
 
 /* 0.0 Read more */
-.read_more_btn a{									/* наезжает на меню */
+.read_more_btn a{									
 	display: block;
 	width: 75px;
 	position: relative;
@@ -410,13 +411,9 @@ li.search{
 	font-family: 'Volkhov', serif; 
 	color: #808080;
 	border: 1px solid #808080;
-	 -webkit-transition: color 2s linear 5s;
-     -moz-transition: color 2s linear 5s;
-     -o-transition: color 2s linear 5s;
-     transition: color 2s linear 5s;
-	z-index: 0;
 }
 .read_more_btn a:hover{						/* добавить плавность! */
+	transition: 1s;
 	background-color: #C0C0C0;
 	color: #FFFFFF;
 	border: 1px solid #FFFFFF;
@@ -425,23 +422,30 @@ li.search{
 
 .post_sm{
 	margin: 20px 0px;
-	
 }
+.post_sm li{
+	display: inline-block;
+}
+
 .post_sm a{
-	display: block;
 	text-decoration: none;
 	margin: 0px 10px 0px 20px;
 	color: #808080;
+	width: 100%;
+	overflow: hidden;
 }
-.post_in{background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.post_tw{background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.post_vk{background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.post_comm {background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;
-	text-decoration: none;
-	text-align: right;
-	float: right;
-	}
+.post_fb {background: #ffffff url("../images/sprite_icons.png") no-repeat 0px -30px;    width: 15px;	height: 15px;}
+.post_fb:hover {background: #ffffff url("../images/sprite_icons.png") no-repeat -16px -30px;transition: 1s;}
+.post_in {background: #ffffff url("../images/sprite_icons.png") no-repeat 0px -45px;    width: 15px;	height: 15px;}
+.post_in:hover {background: #ffffff url("../images/sprite_icons.png") no-repeat -16px -45px;transition: 1s;}
+.post_vk {background: #ffffff url("../images/sprite_icons.png") no-repeat 0px -61px;	width: 15px; 	height: 15px;}
+.post_vk:hover {background: #ffffff url("../images/sprite_icons.png") no-repeat -17px -61px;transition: 1s;}
+.post_tw {background: #ffffff url("../images/sprite_icons.png") no-repeat 0px -75px;	width: 15px; 	height: 15px;}
+.post_tw:hover {background: #ffffff url("../images/sprite_icons.png") no-repeat -17px -75px;transition: 1s;}
+.post_comm {background: #ffffff url("../images/sprite_icons.png") no-repeat 0px -15px;	width: 15px; 	height: 15px;}
+.post_comm:hover {background: #ffffff url("../images/sprite_icons.png") no-repeat -17px -15px;}
 
+.post_comm_wrap{float: right;}
 /* 0.0 Other Posts (left bar)*/
 .blog_2bars{
 }
