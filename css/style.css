@@ -1,0 +1,590 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family:Tahoma, Geneva, sans-serif;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+/*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block;
+}
+
+b,
+strong {
+/*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold;
+}
+
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+/*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic;
+}
+.style_table,
+.style_table tr,
+.style_table td{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* 1.fonts
+*
+*
+*
+*
+*/
+
+.ib{
+	display: inline-block;
+	vertical-align: top;	
+}
+.b{
+	display:block;
+}
+/*1.fonts*/
+ .p1{font-family: 'Droid Serif', serif; font-size: 30px;}
+ .p2{font-family: 'Raleway', sans-serif; font-size: 30px;} /* для логотипа */
+ .p3{font-family: 'Volkhov', serif; font-size: 30px;}
+     /* font-family: 'Roboto', sans-serif; 400,900,700,500,300 */
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+ body{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+
+/*1./fonts*/
+
+ul, li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*0.0 Menu*/
+
+.menu_bar{
+	background-color: #000000;
+	margin: 0 auto;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 2px solid #808080;
+}
+.menu_bar a{
+	display: block;
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	background-color: #000000;
+ 	font-family: 'Droid Serif', serif;
+	}
+
+.menu_bar a:hover{
+	color:#C0C0C0;
+}
+.menu_row{
+	margin: 0 auto;
+	width: 980px;
+	height: 40px;
+
+}
+.menu_row > li{
+	display: inline-block;
+	position: relative;
+	margin-right: 30px;
+	float: left;		
+}
+.sub_menu{
+	display: none;
+	position: absolute;
+	list-style: none;
+	padding:0px;
+	margin-top: 1px;
+	border-top: 3px solid #808080;
+	z-index: 2;
+}
+.sub_menu>li{
+	display: block;
+	height: 40px;
+	width: 200px;
+	overflow: hidden;
+	border-top: 1px solid #808080;
+	margin-top: -2px;
+}
+
+.sub_menu a{
+	vertical-align: center;
+	text-align: center;
+	display: block
+}
+.menu_triangle{
+	display: none;
+}
+
+.triangle_top_grey {
+	position: absolute;
+	right: 40%;
+	top: 83%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #808080;
+    z-index: 19;
+}
+.triangle_top_black {
+	position: absolute;
+	right: 43%;
+	top: 92%;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #000000;
+    z-index: 20;
+}
+
+.menu_row > li:hover .sub_menu{
+	display: block;
+}
+.menu_row > li:hover .menu_triangle{
+	display: block;
+}
+
+/*0.0 Categories*/
+.about .sub_menu{
+	left: -95%;
+}
+.tags .sub_menu{
+	left: -120%;
+}
+.travels .sub_menu{
+	left: -75%;
+}
+
+/*0.0social-media*/
+.social .sub_menu{
+	left: -95%;
+}
+.menu_fb a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.menu_tw a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.menu_vk a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.menu_fb a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.menu_yt a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.menu_in a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+
+/*search*/
+
+li.search{
+	margin-right: 0px;
+	float: right;
+	}
+#search{
+	display:block;
+	}
+.search input{
+	padding-top: 10px;
+	background-color: #000000;
+	border:0px;
+}
+input[value] {
+	color: #C0C0C0;
+	text-transform: uppercase;
+	font-family: 'Volkhov', serif; 
+}
+
+/*0.0 logo*/
+
+.main-logo{
+	text-decoration: none;
+	font-family: 'Volkhov', serif; 
+	font-size: 70px;
+	margin: 60px auto;
+	margin-bottom: 30px; 
+	display: block;
+	text-align: center;
+	color: #000000;
+}
+
+/*0.0 Content-conteiner*/
+.main{
+	margin: 0 auto;
+	width: 980px;
+}
+
+/*0.0 Last Post*/
+.last_post{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #808080;
+}
+.post_title{
+	text-align: center;
+	padding: 20px 0px 10px 0px;
+}
+.post_title a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 30px;
+}
+
+.post_info{
+	color: #808080;
+	text-align: center;
+}
+.post_place{
+}
+.post_time{
+}
+
+.post_content{
+	margin:0 10%;
+	text-align: justify;
+}
+
+/* 0.0 Read more */
+.read_more_btn a{									/* наезжает на меню */
+	display: block;
+	width: 75px;
+	position: relative;
+	margin:0 auto;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: 'Volkhov', serif; 
+	color: #808080;
+	border: 1px solid #808080;
+	 -webkit-transition: color 2s linear 5s;
+     -moz-transition: color 2s linear 5s;
+     -o-transition: color 2s linear 5s;
+     transition: color 2s linear 5s;
+	z-index: 0;
+}
+.read_more_btn a:hover{						/* добавить плавность! */
+	background-color: #C0C0C0;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+/*0.0 Post Response*/
+
+.post_sm{
+	margin: 20px 0px;
+	
+}
+.post_sm a{
+	display: block;
+	text-decoration: none;
+	margin: 0px 10px 0px 20px;
+	color: #808080;
+}
+.post_in{background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.post_tw{background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.post_vk{background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.post_comm {background: #ffffff url("https://api.fnkr.net/testimg/15x15/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;
+	text-decoration: none;
+	text-align: right;
+	float: right;
+	}
+
+/* 0.0 Other Posts (left bar)*/
+.blog_2bars{
+}
+.blog_post{
+	width: 640px;
+	margin: 5px 35px 0px 0px;
+	}
+.small_post_conteiner{
+	padding: 20px 0px 0px 0px;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.main_img_small{}
+.sidebar{
+	width: 300px;
+}
+
+	/* 0.0 Right bar*/
+	/* 0.0 Share*/
+	/* 0.0 Instagram*/
+	.sidebar_black_block{
+		border: 1px solid #C0C0C0;
+	}
+	.sidebar_black_block p{
+		padding: 10px;
+		text-align: center;
+		color: #ffffff;
+		margin: 0;
+	}
+	/* 0.0 Video*/
+
+
+
+
+
+
+/* 0.0 Footer*/
+
+	/* 0.0 Footer pop-posts*/
+	.conteiner_white{
+		background-color: #FFFFFF;
+		width: 100%;
+	}
+	.conteiner_margin{
+		width: 980px;
+		display: block;
+		margin: 0 auto;
+	}
+	.pop_posts p{
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Droid Serif', serif;
+	}
+	/* 0.0 Footer menu*/
+	.conteiner_grey{
+		background-color: #C0C0C0;
+		width: 100%;
+	}
+	.footer_sub_menu{
+		display: none;
+		position: absolute;
+		list-style: none;
+		padding:0px;
+		top: -120px;
+		border-top: 3px solid #808080;
+		z-index: 2;
+	}
+	.footer_sub_menu>li{
+		display: block;
+		height: 40px;
+		width: 200px;
+		overflow: hidden;
+		border-top: 1px solid #808080;
+		margin-top: -2px;
+	}
+
+	.footer_sub_menu a{
+		vertical-align: center;
+		text-align: center;
+		display: block
+	}
+	.footer_menu_row > li{
+		display: inline-block;
+		position: relative;
+		margin-right: 30px;
+	}
+	.footer_menu_row a{
+		display: block;
+		padding:10px;
+		color: black;
+		text-decoration: none;
+		background-color: #C0C0C0;
+	 	font-family: 'Droid Serif', serif;
+	}
+	li.to_top{
+		margin-right: 0px;
+	}
+	.footer_menu_row a:hover{
+		color:#ffffff;
+	}
+
+	.menu_triangle{
+		display: none;
+	}
+
+	.triangle_fut_grey {
+		position: absolute;
+		right: 40%;
+		top: 83%;
+	    width: 0;
+	    height: 0;
+	    border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+	    border-top: 10px solid #808080;
+	    z-index: 19;
+	}
+	.triangle_fut_black {
+		position: absolute;
+		right: 43%;
+		top: 92%;
+	    width: 0;
+	    height: 0;
+	    border-left: 3px solid transparent;
+	    border-right: 3px solid transparent;
+	    border-top: 6px solid #000000;
+	    z-index: 20;
+	}
+
+	.footer_menu_row > li:hover .footer_sub_menu{
+		display: block;
+	}
+	.footer_menu_row > li:hover .menu_triangle{
+		display: block;
+	}
+	/* 0.0 Footer socia*/
+	.footer_social_stats{
+		padding: 20px 15px;
+	}
+	.footer_social_stats li{
+		
+	}
+	.footer_social_stats{
+		
+	}
+	/* 0.0 Footer copyright*/
+	.conteiner_black{
+		background-color: #000000;
+		width: 100%;
+	}
+	.copyright{
+		padding: 15px 10px 15px 10px;
+	}
+	.copyright a{
+		vertical-align: middle;
+		text-align: center;
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+
