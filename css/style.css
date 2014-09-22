@@ -333,11 +333,21 @@ li.search{
 	background-color: #000000;
 	border:0px;
 }
-input[value] {
+.search input[value],.search input[placeholder] {
 	color: #C0C0C0;
 	text-transform: uppercase;
 	font-family: 'Volkhov', serif; 
 }
+.search_btn{
+	background: #000000 url("../images/sprite_icons.png")  no-repeat -15px 0px; 
+	height: 15px; 
+	width: 15px;
+	text-indent: -9999px;
+	border:0 none;
+	margin: 10px 0 0 0 ;
+	padding:0;
+	cursor: pointer;}
+.search_btn:hover{background: #000000 url("../images/sprite_icons.png")  no-repeat 1px 0px;}
 
 /*0.0 logo*/
 
