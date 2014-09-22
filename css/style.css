@@ -308,12 +308,16 @@ ul, li{
 .social .sub_menu{
 	left: -95%;
 }
-.menu_fb a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.menu_tw a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.menu_vk a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.menu_fb a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.menu_yt a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
-.menu_in a{background: #000000 url("https://api.fnkr.net/testimg/25x25/00CED1/FFF/?text=img+placeholder") no-repeat 4% 50%;}
+.menu_fb a{background: #000000 url("../images/fb_w.png")  no-repeat 4% 50%;}
+.menu_fb a:hover{background: #000000 url("../images/fb_g.png")  no-repeat 4% 50%;}
+.menu_in a{background: #000000 url("../images/in_w.png")  no-repeat 4% 50%;}
+.menu_in a:hover{background: #000000 url("../images/in_g.png")  no-repeat 4% 50%;}
+.menu_vk a{background: #000000 url("../images/vk_w.png")  no-repeat 4% 50%;}
+.menu_vk a:hover{background: #000000 url("../images/vk_g.png")  no-repeat 4% 50%;}
+.menu_tw a{background: #000000 url("../images/tw_w.png")  no-repeat 4% 50%;}
+.menu_tw a:hover{background: #000000 url("../images/tw_g.png")  no-repeat 4% 50%;}
+	
+
 
 /*search*/
 
