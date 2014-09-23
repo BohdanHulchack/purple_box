@@ -521,6 +521,7 @@ li.search{
 	/* 0.0 Instagram*/
 	.sidebar_black_block{
 		border: 1px solid #C0C0C0;
+		margin-top: 40px;
 	}
 	.sidebar_black_block p{
 		padding: 10px;
@@ -639,9 +640,7 @@ li.search{
 	}
 	/* 0.0 Footer socia*/
 	.footer_social_stats{
-
-		padding: 20px 15px;
-
+		padding: 20px 70px;
 	}
 	.circle_small{
 		width: 200px;
