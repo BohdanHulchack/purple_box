@@ -5,6 +5,9 @@
 	<title>Purple Box</title>
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Raleway:500|Volkhov' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="jquery.flexslider.js"></script>
 </head>
 <body>
 <!-- content -->
@@ -277,9 +280,13 @@
 				</ul>
 			</div>	
 		</footer>
-		</div>
+		</div><div class="more_posts_btn">
+		<a href="http://">More posts</a>
+	</div>
 <!-- /blog_post#3 -->
 	</div>
+	
+	
 <!-- /All posts -->
 <!-- /blog -->
 
@@ -320,7 +327,23 @@
 			<div class="conteiner_black">
 				<p>Instagram</p>
 			</div>
-			<img src="https://api.fnkr.net/testimg/298x300/00CED1/FFF/?text=Banner">
+			<div class="flexslider">
+			  <ul class="slides">
+			    <li>
+			      <img src="images/instagram/insr_1.png" height="300" width="300" />
+			    </li>
+			    <li>
+			      <img src="images/instagram/insr_2.png" height="300" width="300" />
+			    </li>
+			    <li>
+			      <img src="images/instagram/insr_3.png" height="300" width="300" />
+			    </li>
+			    <li>
+			      <img src="images/instagram/insr_2.png" height="300" width="300" />
+			    </li>
+			  </ul>
+			</div>
+			<p><a class="inst_ref"href="http://instagram.com/linakova">@linakova</a></p>
 		</div>
 		<!-- video -->
 		<div class="sidebar_black_block">
@@ -342,84 +365,20 @@
 </div>
 <!-- /blog_2bars -->
 </div>
-</div>
-</div>
+
+
 <!-- footer -->
-<!-- footer-pop -->
 <footer>
-	<div class="conteiner_white">
-		<div class="conteiner_margin">
-			<div>
-				<div class="pop_posts">
-					<p>Popular Posts</p>
-					<div class="pop_post_img ib">
-						<img src="https://api.fnkr.net/testimg/190x100/00CED1/FFF/?text=img+placeholder">
-					</div>
-					<div class="pop_post_img ib">
-						<img src="https://api.fnkr.net/testimg/190x100/00CED1/FFF/?text=img+placeholder">
-					</div>
-					<div class="pop_post_img ib">
-						<img src="https://api.fnkr.net/testimg/190x100/00CED1/FFF/?text=img+placeholder">
-					</div>			
-					<div class="pop_post_img ib">
-						<img src="https://api.fnkr.net/testimg/190x100/00CED1/FFF/?text=img+placeholder">
-					</div>
-					<div class="pop_post_img ib">
-						<img src="https://api.fnkr.net/testimg/190x100/00CED1/FFF/?text=img+placeholder">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-<!-- /footer pop -->
 <!-- Footer Menu -->
 	<div class="conteiner_grey">
-		<div class="conteiner_margin"><!-- menu -->
+		<div class="conteiner_margin">
 			<nav>
 				<ul class="footer_menu_row">
-					<li><a href="#">Home</a></li><!--  
-				 --><li class="travels"><a href="#">Travels</a>
-						<div class="menu_triangle"><div class="triangle_fut_black"></div><div class="triangle_fut_grey"></div></div>	
-						<ul class="footer_sub_menu">
-							<li><a href="">Donetsk</a></li>
-							<li><a href="">Kozyatun</a></li>
-							<li><a href="">Rostov</a></li>
-						</ul>
-					</li><!--
-				 --><li class="tags"><a href="#">Tags</a>
-						<div class="menu_triangle"><div class="triangle_fut_black"></div><div class="triangle_fut_grey"></div></div>			
-						<ul class="footer_sub_menu">
-							<li><a href="">Backstage</a></li>
-							<li><a href="">Stage</a></li>
-							<li><a href="">Selfie</a></li>
-						</ul>
-					</li><!--
-				 --><li class="about"><a href="#">About</a>
-				 		<div class="menu_triangle"><div class="triangle_fut_black"></div><div class="triangle_fut_grey"></div></div>
-						<ul class="footer_sub_menu">
-							<li><a href="">Me</a></li>
-							<li><a href="">Contact</a></li>
-							<li><a href="">Press</a></li>
-						</ul>
-					</li><!--
-				--><li class="social"><a href="#">Share</a>
-						<div class="menu_triangle"><div class="triangle_fut_black"></div><div class="triangle_fut_grey"></div></div>
-						<ul class="footer_sub_menu">
-							<li><div class="menu_fb"><a href="">Facebook</a></div></li>
-							<li><div class="menu_tw"><a href="">Twitter</a></div></li>
-							<li><div class="menu_vk"><a href="">VK</a></div></li>
-							<li><div class="menu_yt"><a href="">Youtube</a></div></li>
-							<li><div class="menu_in"><a href="">Instagram</a></div></li>
-						</ul>
-					</li><!--
-				--> <li class="portfolio">
-						<a href="#">Portfolio</a>
-					</li><!--
-				--><li class="to_top ib">
-						<div>
-							<a href="#top">Back to top</a>
-						</div>
-					</li>
+				    <li class=""><a href="#">About Me</a></li><!--
+				 --><li class=""><a href="#">Press</a></li><!--
+				 --><li class=""><a href="#">Contact</a></li><!--
+				 --><li class=""><a href="#">Portfolio</a></li><!--
+				 --><li class="back_to_top"><a href="#top">Back to top</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -466,14 +425,13 @@
 		</div>
 	</div>
 
-
-
-
-	
-
 <!-- /Footer Menu -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
 
-
+  });
+</script>
 </footer>
 <!-- /footer -->
 
